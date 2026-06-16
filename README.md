@@ -1,5 +1,7 @@
 # Learning Fortran
 
+<a href="https://fortran-lang.org"><img src="https://skillicons.dev" /></a>
+
 This repository contains a collection of Fortran 90 (`.f90`) programs documenting my progression in learning Modern Fortran. As a physics student, I am building these foundational high-performance computing skills to support scientific computing and the simulation of many-body systems.
 
 ---
