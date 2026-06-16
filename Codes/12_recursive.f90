@@ -2,7 +2,7 @@ program factorial_calculator
 
     implicit none
 
-    integer :: n, result
+    integer(8) :: n, result
 
     do 
         print *, "Enter a positive integer:"
@@ -23,9 +23,9 @@ program factorial_calculator
     contains
     subroutine factorial(input, output)
         
-        integer, intent(in) :: input
-        integer, intent(out) :: output
-        integer :: i
+        integer(8), intent(in) :: input
+        integer(8), intent(out) :: output
+        integer(8) :: i
 
         output = 1
         do i=1, input
@@ -35,8 +35,8 @@ program factorial_calculator
 
     ! recursive functions are functions that call themselves in their definition
     recursive function factorial_recursive(n) result(output) ! the result keyword is used to specify the output variable for the function
-        integer, intent(in) :: n
-        integer :: output
+        integer(8), intent(in) :: n
+        integer(8) :: output
 
         if (n == 0) then
             output = 1
